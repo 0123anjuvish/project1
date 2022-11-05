@@ -1,0 +1,93 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#header{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 165px;
+    flex-direction: column;
+  }
+  .quote-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    width:300px;
+    background: rgba(247, 186, 186, 0.7);
+    border-radius: 15px;
+    box-shadow:10px 10px rgb(105, 88, 88);
+    transition: 0.8s;
+  }
+  #text {
+    color: rgb(155, 214, 92);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  
+  button#back {
+    margin-top: -3px;
+    margin-left: 10%;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(229, 248, 83);
+    border-style: none;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+  }
+  button#next {
+    margin-top: -3px;
+    margin-left: 70%;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(229, 248, 83);
+    border-style: none;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+  }
+  
+  button:hover:active {
+    box-shadow: 0px 0px 12px 5px rgb(228, 228, 180);
+    background-color: rgb(243, 234, 232);
+    font-size: 15px;
+  }
+  #author-name{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  
+  
